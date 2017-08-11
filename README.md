@@ -3,4 +3,4 @@
 
 link of the application 
 
-https://pravinjadhavn7.github.io/todo-app/
+https://pravinjadhav7.github.io//todo-app//
