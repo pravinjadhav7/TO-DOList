@@ -69,7 +69,9 @@ label{
   }
 .destroy{
         line-height: 30px !important;
-        margin-left: 323px;
+                top: -37px;
+            left: 410px;
+
 }
 .footer {
     color: #777;

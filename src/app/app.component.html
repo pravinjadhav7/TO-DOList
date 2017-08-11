@@ -9,8 +9,9 @@
         <div class="view">
           <input class="toggle" id="test6" type="checkbox" (click)="toggleTodoComplete(todo)" [checked]="todo.complete">
           <label for="test6">{{todo.title}}</label>
+          <div class="buttonDiv">
           <button class="destroy btn-floating " (click)="removeTodo(todo)"> <span class="cross"> &times;</span></button>
-        
+          </div>
         </div>
       </li>
     </ul>
