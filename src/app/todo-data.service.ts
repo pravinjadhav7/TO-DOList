@@ -7,7 +7,7 @@ export class TodoDataService {
 
   lastId: number = 0;  //for incrementing the id 
 
-  todos:Todo[]=[]; // for placeholder todolist
+  todos:Todo[]=[]; 
 
   constructor() { }
   
@@ -27,17 +27,6 @@ export class TodoDataService {
     return this;
   }
 
-
-    /** update values from todo list /PUT menthod*/
-   updateTodoById(id: number, values: Object = {}): Todo {
-    let todo = this.getTodoById(id);
-    if (!todo) {
-      return null;
-    }
-    Object.assign(todo, values);
-    return todo;
-  }
-
   /** GET all todo values  */
    getAllTodos(): Todo[] {
     return this.todos;
@@ -50,11 +39,5 @@ export class TodoDataService {
       .pop();
   }
 
-   toggleTodoComplete(todo: Todo){
-    let updatedTodo = this.updateTodoById(todo.id, {
-      complete: !todo.complete
-    });
-    return updatedTodo;
-  }
 
 }
